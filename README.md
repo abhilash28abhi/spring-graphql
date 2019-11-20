@@ -8,6 +8,7 @@ To access GraphQl query UI tool:
 1.  http://localhost:8080/graphiql
 
 To fetch the product details for a given product Id , the GraphQl query would be:
+```
 {
   product(id: "1") {
     id
@@ -20,8 +21,10 @@ To fetch the product details for a given product Id , the GraphQl query would be
     }
   }
 }
+```
 
 To Access only selected fields from the product pass the field names accordingly in the query:
+```
 {
   product(id: "1") {
     id
@@ -30,3 +33,4 @@ To Access only selected fields from the product pass the field names accordingly
     listPrice
   }
 }
+```
