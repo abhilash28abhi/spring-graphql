@@ -34,3 +34,6 @@ To Access only selected fields from the product pass the field names accordingly
   }
 }
 ```
+2.  We can also pass the GraphQl query in encoded format and be used in controller for a given use-case:
+http://localhost:8080/graphql?query=%7Bproduct%28id%3A%221%22%29%7BidtitleshortDesclistPrice%7D%7D which is human equivalent for
+http://localhost:8080/graphql?query={product(id:"1"){idtitleshortDesclistPrice}}
